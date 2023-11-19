@@ -4,9 +4,271 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 	<title>GFG</title>
 </head>
 <body>
-	<h1>Hello World this is my first web page.</h1>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <img style="margin-right: 10px;" src="/assets/land/assets/img/favicon.PNG">
+      <h2 class="logo mr-auto"><a href="index.html">Testour</a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a >Accueil</a></li>
+          <li><a routerLink="/navservices">Evénement</a></li>
+          <li><a routerLink="/navcontact">Contact</a></li>
+          
+          <a style="color:White;" routerLink="/choose" class="get-started-btn scrollto">Créer un compte</a>
+          <a style="color:White;" routerLink="/signin" class="get-started-btn scrollto"><i class="fas fa-user fa-sm fa-fw mr-2"></i> Mon compte</a>
+        </ul>
+      </nav><!-- .nav-menu -->
+  
+      
+    </div>
+  </header><!-- End Header -->
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up"
+          data-aos-delay="200">
+          <h1>Bienvenue sur le site dédié à Testour, un lieu riche en histoire et en culture !</h1>
+          
+  
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+         <!--- <img src="/assets/land/assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+         <img src="https://media.routard.com/image/86/6/photo.1481866.jpg" class="img-fluid animated float-right" alt="" [ngStyle]="{'width.px': 300, 'height.px': ''}">
+  
+        </div>
+      </div>
+    </div>
+  
+  </section><!-- End Hero -->
+  
+  <main id="main">
+  
+    <!-- ======= Cliens Section ======= -->
+    <section id="cliens" class="cliens section-bg">
+      <div class="container">
+  
+        <div class="row" data-aos="zoom-in">
+  
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src= "https://voyage-tunisie.info/wp-content/uploads/2018/11/Testour-2-.jpg" class="img-fluid" alt="">
+            
+          </div>
+  
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="https://voyage-tunisie.info/wp-content/uploads/2018/11/Testour-1.jpg" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="https://voyage-tunisie.info/wp-content/uploads/2018/11/barrage-testour.jpg" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="https://voyage-tunisie.info/wp-content/uploads/2018/11/l-Le-Verger-des-Montagnes.jpg" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="https://voyage-tunisie.info/wp-content/uploads/2018/11/paysage-testour.jpg" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="https://www.businessnews.com.tn/images/album/IMGBN97069h.jpg" class="img-fluid" alt="">
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Cliens Section -->
+  
+   
+  
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+  
+        <div class="section-title">
+          <h2>EVENEMENTS</h2>
+          <p>Des images qui s'adaptent les évenements</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box"> 
+              <div ></div>
+              <img src="https://joussour-media.tn/wp-content/uploads/2022/10/310707400_485220600289396_5842260319864264723_n-672x430.jpg" alt="Mon Image" [ngStyle]="{'width.px': 200, 'height.px': 'auto'}">
+              <h4><a><h4><a><br>Le Festival de la grenade à Testour</a></h4></a></h4>
+            </div>
+          </div>
+  
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              
+              <img src="https://tunisie.co/uploads/images/content/testour-horloge-140618-v.jpg" alt="Mon Image"[ngStyle]="{'width.px': 200, 'height.px': 'auto'}">
+              <h4><a><h4><a><br>La Grande Mosquée de Testour</a></h4></a></h4>
+            </div>
+          </div>
+  
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              
+              <img src="https://www.leconomistemaghrebin.com/wp-content/uploads/2020/07/testour-.jpg" alt="Mon Image"alt="Mon Image"[ngStyle]="{'width.px': 160, 'height.px': 'auto'}">
+              <h4><a><h4><a><br>Le Festival international du malouf et de la musique traditionnelle arabe de Testour </a></h4></a></h4>
+            </div>
+          </div>
+  
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+           
+              <img src="https://linstant-m.tn//uploads/5188.png"alt="Mon Image"[ngStyle]="{'width.px': 180, 'height.px': 'auto'}">
+              <h4><a><h4><a><br>Tyrolienne Testour</a></h4></a></h4>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Services Section -->
+  
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+  
+        <div class="row">
+  
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Description</h3>
+              <ul>
+                <li><i class="bx bx-check"></i> la grande mosquée de Testour a été bâtie dans un style espagnol. Elle constitue ainsi l’un des exemples les plus remarquables de l’art moresque en Tunisie.</li>
+                <li><i class="bx bx-check"></i> La grenade, un fruit méconnu en Tunisie, est mise à l'honneur lors du 7e festival à Testour, organisé par l'Association de la sauvegarde de la ville</li>
+                <li><i class="bx bx-check"></i> Le Festival International du Malouf et de la musique traditionnelle arabe a lieu tous les ans dans la ville de Testour,Le Malouf tunisien est la principale musique traditionnelle tunisienne, un type particulier de la musique arabo-andalouse</li>
+                <li><i class="bx bx-check"></i> Glisser à travers les cieux, suspendu entre terre et ciel, la tyrolienne offre une sensation de liberté incomparable, une aventure époustouflante au cœur de l'air</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box featured">
+              <h3>Historique</h3>
+              <ul>
+                <li><i class="bx bx-check"></i> Découvrez Testour, une ville fondée au XVIIe siècle par des Morisques espagnols en exil. Son architecture mauresque, ses rues pittoresques et sa Grande Mosquée témoignent de son histoire riche. Plongez dans son héritage culturel en dégustant des plats locaux et en participant à ses festivals animés. Testour vous invite à un voyage dans le temps, au cœur de son histoire captivante</li>
+               
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+  
+  
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+  
+        <div class="section-title">
+          <h2>Contact</h2>
+          
+        </div>
+  
+        <div class="row">
+  
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>Testour, Tunis</p>
+              </div>
+  
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>nejiajerbi98@gmail.com</p>
+              </div>
+  
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+216--------</p>
+              </div>
+  
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email"
+                    data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
+                  data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required"
+                  data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Contact Section -->
+  
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+  
+  
+  
+    
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Testour</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+  
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 </body>
 </html>
